@@ -1,4 +1,5 @@
 public interface Subject {
+	
 	// 添加新用户接收邮件
 	public void attach(Observer observer);
 

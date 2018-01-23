@@ -2,15 +2,13 @@ public class Customer implements Observer {
 
 	// 注册信息：用户名、密码、邮箱地址
 	private String username;
-	private String password;
-	private String email;
+	private FlowerShop subject;
 
 	// 构造方法
-	public Customer(String username, String password, String email) {
+	public Customer(String username,FlowerShop subject) {
 		this.username = username;
-		this.password = password;
-		this.email = email;
-		System.out.println("欢迎新用户" + username + "!");
+		this.subject = subject;
+		subject.attach(this); // 将自己注册
 	}
 
 	@Override

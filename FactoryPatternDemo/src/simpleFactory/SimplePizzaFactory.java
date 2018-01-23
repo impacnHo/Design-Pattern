@@ -1,9 +1,10 @@
 package simpleFactory;
 
 public class SimplePizzaFactory {
+	Pizza pizza;
 
 	public  Pizza craetePizza(String type) {
-		Pizza pizza = null ;
+		pizza = null;
 
 		if (type.equals("cheese")) {
 			pizza = new CheesePizza();
